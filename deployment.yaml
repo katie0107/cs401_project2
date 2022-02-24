@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: american-predictor-zxj
-        image: quay.io/katiezzz/american-predictor:0.1
+        image: quay.io/katiezzz/american-predictor:0.3
         ports:
         - containerPort: 5015
