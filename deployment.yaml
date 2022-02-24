@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: american-predictor-deployment-zxj
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: american-predictor-zxj
+  template:
+    metadata:
+      labels:
+        app: american-predictor-zxj
+    spec:
+      containers:
+      - name: american-predictor-zxj
+        image: quay.io/katiezzz/american-predictor:0.1
+        ports:
+        - containerPort: 5015
